@@ -1,0 +1,57 @@
+.container {
+  position: relative;
+  height: 25rem;
+  width: 25rem;
+  margin: 4rem auto 0;
+  background-color: #e56262;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.2rem; }
+
+.circle-large, .circle-med, .circle-small {
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%; }
+
+.circle-large {
+  margin-left: -2.875rem;
+  margin-top: -2.875rem;
+  height: 5.75rem;
+  width: 5.75rem;
+  box-shadow: 0.5rem 0.75rem 1rem rgba(0, 0, 0, 0.3);
+  animation: 2s cubic-bezier(0.23, 1, 0.32, 1) infinite alternate growAndShrinkLarge; }
+
+.circle-med {
+  margin-left: -1.9375rem;
+  margin-top: -1.9375rem;
+  height: 3.875rem;
+  width: 3.875rem;
+  box-shadow: 0.5rem 0.75rem 1rem rgba(0, 0, 0, 0.3);
+  animation: 2s cubic-bezier(0.23, 1, 0.32, 1) infinite alternate growAndShrinkMed; }
+
+.circle-small {
+  margin-left: -1rem;
+  margin-top: -1rem;
+  height: 2rem;
+  width: 2rem;
+  box-shadow: 0.5rem 0.75rem 1rem rgba(0, 0, 0, 0.3);
+  animation: 2s cubic-bezier(0.23, 1, 0.32, 1) infinite alternate growAndShrinkSmall; }
+
+@keyframes growAndShrinkLarge {
+  0%, 10% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+@keyframes growAndShrinkMed {
+  0%, 40% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+@keyframes growAndShrinkSmall {
+  0%, 70% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+/*# sourceMappingURL=style.css.map */

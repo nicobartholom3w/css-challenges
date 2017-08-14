@@ -1,0 +1,82 @@
+$red: rgb(229,98,98);
+$shadowColor: rgba(0,0,0,0.3);
+$largeCircleDiameter: 5.75rem;
+$mediumCircleDiameter: 3.875rem;
+$smallCircleDiameter: 2rem;
+$circleShadow: 0.5rem 0.75rem 1rem $shadowColor;
+$scaleTransitionTiming: 2s cubic-bezier(0.23, 1, 0.32, 1) infinite alternate;
+
+.container {
+  position: relative;
+  height: 25rem;
+  width: 25rem;
+  margin: 4rem auto 0;
+  background-color: $red;
+  box-shadow: 0 0 0.2rem $shadowColor;
+  border-radius: 0.2rem;
+}
+
+%circle {
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+}
+
+.circle-large {
+  @extend %circle;
+  margin-left: $largeCircleDiameter / -2;
+  margin-top: $largeCircleDiameter / -2;
+  height: $largeCircleDiameter;
+  width: $largeCircleDiameter;
+  box-shadow: $circleShadow;
+  animation: $scaleTransitionTiming growAndShrinkLarge;
+}
+
+.circle-med {
+  @extend %circle;
+  margin-left: $mediumCircleDiameter / -2;
+  margin-top: $mediumCircleDiameter / -2;
+  height: $mediumCircleDiameter;
+  width: $mediumCircleDiameter;
+  box-shadow: $circleShadow;
+  animation: $scaleTransitionTiming growAndShrinkMed;
+}
+
+.circle-small {
+  @extend %circle;
+  margin-left: $smallCircleDiameter / -2;
+  margin-top: $smallCircleDiameter / -2;
+  height: $smallCircleDiameter;
+  width: $smallCircleDiameter;
+  box-shadow: $circleShadow;
+  animation: $scaleTransitionTiming growAndShrinkSmall;
+}
+
+@keyframes growAndShrinkLarge {
+  0%, 10% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes growAndShrinkMed {
+  0%, 40% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes growAndShrinkSmall {
+  0%, 70% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
