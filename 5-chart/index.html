@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="container">
+     <div class="chart">
+       <div class="chart__header">
+         <div class="chart__left">
+           <div class="chart__title">
+             Weekly Report
+           </div>
+           <div class="chart__date">
+             01. Feb - 07. Feb
+           </div>
+         </div>
+         <div class="chart__right">
+           <div class="chart__label">
+             Revenue
+           </div>
+           <div class="chart__money">
+             $ 3621.79
+           </div>
+         </div>
+       </div>
+       <div class="chart__main">
+          <div class="chart__legend">
+            <div class="legend__container">
+              <div><span class="legend-key key-red"></span>Views</div>
+              <div><span class="legend-key key-blue"></span>Purchases</div>
+            </div>
+          </div>
+          <div class="chart__data">
+            <div class="chart__data__background-line--one"></div>
+            <div class="chart__data__background-line--two"></div>
+            <div class="chart__data__background-line--three"></div>
+            <div class="chart__data__lines">
+              <div class="chart__data__lines--red">
+                <svg>
+                  <polyline points="0,45 40,8 80,20 120,5 160,38 200,45 240,15">
+                </svg>
+                <div class="points">
+                  <div class="point-1"></div>
+                  <div class="point-2"></div>
+                  <div class="point-3"></div>
+                  <div class="point-4"></div>
+                  <div class="point-5"></div>
+                  <div class="point-6"></div>
+                  <div class="point-7"></div>
+                </div>
+              </div>
+              <div class="chart__data__lines--blue">
+                <svg>
+                  <polyline points="0,10 40,0, 80,17, 120,5, 160,12 200,25 240,15">
+                </svg>
+                <div class="points">
+                  <div class="point-1"></div>
+                  <div class="point-2"></div>
+                  <div class="point-3"></div>
+                  <div class="point-4"></div>
+                  <div class="point-5"></div>
+                  <div class="point-6"></div>
+                  <div class="point-7"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chart__key">
+            <ul class="chart__dates">
+              <li>mon</li>
+              <li>tue</li>
+              <li>wed</li>
+              <li>thu</li>
+              <li>fri</li>
+              <li>sat</li>
+              <li>sun</li>
+            </ul>
+          </div>
+       </div>
+     </div>
+   </div>
+</body>
+</html>

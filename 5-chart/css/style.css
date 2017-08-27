@@ -1,0 +1,188 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400,200);
+* {
+  box-sizing: border-box; }
+
+.chart__legend:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.container {
+  position: relative;
+  height: 25rem;
+  width: 25rem;
+  background-color: #42a7a1;
+  margin: 2rem auto 0;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3); }
+
+.chart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 13.75rem;
+  width: 17.5rem;
+  margin-left: -8.75rem;
+  margin-top: -6.875rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  font-family: "Open Sans"; }
+  .chart__header {
+    height: 3.75rem;
+    background-color: #f1ba64;
+    border-radius: 0.2rem 0.2rem 0 0;
+    color: white;
+    padding: 0.75rem 1rem; }
+  .chart__left {
+    font-size: 0.75rem;
+    float: left; }
+  .chart__right {
+    margin: 0;
+    float: right; }
+  .chart__title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding-bottom: 0.1rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem; }
+  .chart__date {
+    font-size: 0.7rem;
+    font-weight: 400; }
+  .chart__label {
+    font-size: 0.7rem;
+    text-align: right;
+    padding-bottom: 0.1rem;
+    font-weight: 400; }
+  .chart__money {
+    font-size: 0.9rem; }
+  .chart__main {
+    color: grey;
+    font-weight: 200;
+    font-size: 0.6rem; }
+  .chart__legend {
+    margin: 1rem 0.75rem 1rem; }
+    .chart__legend .legend__container {
+      float: right; }
+    .chart__legend .legend-key {
+      display: inline-block;
+      height: 0.15rem;
+      width: 0.7rem;
+      border-radius: 0.125rem;
+      margin: 0 0.5rem; }
+      .chart__legend .legend-key.key-red {
+        background-color: #fa7373; }
+      .chart__legend .legend-key.key-blue {
+        background-color: #7ba2ff; }
+    .chart__legend div {
+      display: inline-block;
+      color: #949494; }
+  .chart__dates {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .chart__dates li {
+      text-transform: uppercase;
+      font-size: 0.6rem;
+      display: inline-block;
+      padding: 0.58rem;
+      color: #949494; }
+  .chart__data {
+    height: 5rem;
+    margin: 0 0.75rem;
+    position: relative; }
+    .chart__data__background-line--one, .chart__data__background-line--two, .chart__data__background-line--three {
+      position: absolute;
+      background-color: #f2f2f2;
+      height: 0.5px;
+      width: 100%; }
+    .chart__data__background-line--two {
+      top: 2.5rem; }
+    .chart__data__background-line--three {
+      top: 5rem; }
+    .chart__data__lines {
+      position: relative; }
+      .chart__data__lines--red svg {
+        position: absolute;
+        left: 0.5rem;
+        height: 3rem;
+        width: 15rem;
+        stroke: #fa7373;
+        stroke-width: 2;
+        fill: none; }
+      .chart__data__lines--red .points {
+        position: absolute;
+        left: 0.5rem;
+        height: 3rem;
+        width: 15rem; }
+        .chart__data__lines--red .points div {
+          position: absolute;
+          height: 1px;
+          width: 1px;
+          border: 3px solid #fa7373;
+          border-radius: 50%; }
+        .chart__data__lines--red .points .point-1 {
+          top: 40px;
+          left: -1px; }
+        .chart__data__lines--red .points .point-2 {
+          left: 37px;
+          top: 5px; }
+        .chart__data__lines--red .points .point-3 {
+          left: 77px;
+          top: 16px; }
+        .chart__data__lines--red .points .point-4 {
+          left: 117px;
+          top: 2px; }
+        .chart__data__lines--red .points .point-5 {
+          left: 157px;
+          top: 35px; }
+        .chart__data__lines--red .points .point-6 {
+          left: 197px;
+          top: 42px; }
+        .chart__data__lines--red .points .point-7 {
+          left: 237px;
+          top: 12px; }
+      .chart__data__lines--blue svg {
+        position: absolute;
+        top: 3rem;
+        left: 0.5rem;
+        height: 2.75rem;
+        width: 15rem;
+        stroke: #7ba2ff;
+        stroke-width: 2;
+        fill: none; }
+      .chart__data__lines--blue .points {
+        position: absolute;
+        top: 3rem;
+        left: 0.5rem;
+        height: 2.75rem;
+        width: 15rem; }
+        .chart__data__lines--blue .points div {
+          position: absolute;
+          height: 1px;
+          width: 1px;
+          border: 3px solid #7ba2ff;
+          border-radius: 50%; }
+        .chart__data__lines--blue .points .point-1 {
+          top: 7px;
+          left: -1px; }
+        .chart__data__lines--blue .points .point-2 {
+          left: 37px;
+          top: -3px; }
+        .chart__data__lines--blue .points .point-3 {
+          left: 77px;
+          top: 13px; }
+        .chart__data__lines--blue .points .point-4 {
+          left: 117px;
+          top: 2px; }
+        .chart__data__lines--blue .points .point-5 {
+          left: 157px;
+          top: 9px; }
+        .chart__data__lines--blue .points .point-6 {
+          left: 197px;
+          top: 21px; }
+        .chart__data__lines--blue .points .point-7 {
+          left: 237px;
+          top: 12px; }
+
+/*# sourceMappingURL=style.css.map */
