@@ -120,7 +120,36 @@
           height: 1px;
           width: 1px;
           border: 3px solid #fa7373;
-          border-radius: 50%; }
+          border-radius: 50%;
+          cursor: pointer; }
+        .chart__data__lines--red .points [class^="point-"] .tooltip {
+          opacity: 0;
+          width: 1.8rem;
+          padding: 0.4rem;
+          text-align: center;
+          position: relative;
+          top: -1.5rem;
+          left: -0.95rem;
+          background-color: #fa7373;
+          color: white;
+          border-radius: 0.2rem;
+          display: inline-block;
+          cursor: default;
+          transition: opacity 0.5s, top 0.25s; }
+          .chart__data__lines--red .points [class^="point-"] .tooltip:after {
+            position: absolute;
+            top: 1.4rem;
+            left: 0.5rem;
+            content: '';
+            height: 0;
+            width: 0;
+            border: 7px solid #fa7373;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-left: 7px solid transparent; }
+        .chart__data__lines--red .points [class^="point-"]:hover .tooltip {
+          opacity: 1;
+          top: -2.25rem; }
         .chart__data__lines--red .points .point-1 {
           top: 40px;
           left: -1px; }
@@ -163,6 +192,34 @@
           width: 1px;
           border: 3px solid #7ba2ff;
           border-radius: 50%; }
+        .chart__data__lines--blue .points [class^="point-"] .tooltip {
+          opacity: 0;
+          width: 1.8rem;
+          padding: 0.4rem;
+          text-align: center;
+          position: relative;
+          top: -1.5rem;
+          left: -0.95rem;
+          background-color: #7ba2ff;
+          color: white;
+          border-radius: 0.2rem;
+          display: inline-block;
+          cursor: default;
+          transition: opacity 0.5s, top 0.25s; }
+          .chart__data__lines--blue .points [class^="point-"] .tooltip:after {
+            position: absolute;
+            top: 1.4rem;
+            left: 0.5rem;
+            content: '';
+            height: 0;
+            width: 0;
+            border: 7px solid #7ba2ff;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-left: 7px solid transparent; }
+        .chart__data__lines--blue .points [class^="point-"]:hover .tooltip {
+          opacity: 1;
+          top: -2.25rem; }
         .chart__data__lines--blue .points .point-1 {
           top: 7px;
           left: -1px; }

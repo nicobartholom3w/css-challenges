@@ -181,7 +181,47 @@ $chartBackgroundBarColor: #f2f2f2;
             width: 1px;
             border: 3px solid $chartKeyColorRed;
             border-radius: 50%;
+            cursor: pointer;
           }
+
+          [class^="point-"] {
+            .tooltip {
+              opacity: 0;
+              width: 1.8rem;
+              padding: 0.4rem;
+              text-align: center;
+              position: relative;
+              top: -1.5rem;
+              left: -0.95rem;
+              background-color: $chartKeyColorRed;
+              color: white;
+              border-radius: 0.2rem;
+              display: inline-block;
+              cursor: default;
+              transition: opacity 0.5s, top 0.25s;
+
+              &:after {
+                position: absolute;
+                top: 1.4rem;
+                left: 0.5rem;
+                content: '';
+                height: 0;
+                width: 0;
+                border: 7px solid $chartKeyColorRed;
+                border-bottom: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-left: 7px solid transparent;
+
+              }
+            }
+
+            &:hover .tooltip {
+              opacity: 1;
+              top: -2.25rem;
+            }
+          }
+
+          
 
           .point-1 {
             top: 40px;
@@ -239,6 +279,43 @@ $chartBackgroundBarColor: #f2f2f2;
             width: 1px;
             border: 3px solid $chartKeyColorBlue;
             border-radius: 50%;
+          }
+
+          [class^="point-"] {
+            .tooltip {
+              opacity: 0;
+              width: 1.8rem;
+              padding: 0.4rem;
+              text-align: center;
+              position: relative;
+              top: -1.5rem;
+              left: -0.95rem;
+              background-color: $chartKeyColorBlue;
+              color: white;
+              border-radius: 0.2rem;
+              display: inline-block;
+              cursor: default;
+              transition: opacity 0.5s, top 0.25s;
+
+              &:after {
+                position: absolute;
+                top: 1.4rem;
+                left: 0.5rem;
+                content: '';
+                height: 0;
+                width: 0;
+                border: 7px solid $chartKeyColorBlue;
+                border-bottom: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-left: 7px solid transparent;
+
+              }
+            }
+
+            &:hover .tooltip {
+              opacity: 1;
+              top: -2.25rem;
+            }
           }
 
           .point-1 {
