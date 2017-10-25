@@ -31,6 +31,5 @@ bars.addEventListener('click',function(){
   removeClass(midBar,"no-anim");
   removeClass(thirdBar,"no-anim");
   removeClass(fourthBar,"no-anim");
- 
 });
 
