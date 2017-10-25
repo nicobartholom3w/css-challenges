@@ -1,6 +1,7 @@
 var topBar = document.querySelector('.bars__first');
 var midBar = document.querySelector('.bars__second');
 var thirdBar = document.querySelector('.bars__third');
+var fourthBar = document.querySelector('.bars__fourth');
 var bars = document.querySelector('.bars');
 
 var removeClass = function(elem, className) {
@@ -25,8 +26,11 @@ bars.addEventListener('click',function(){
   toggleActiveClass(topBar);
   toggleActiveClass(midBar);
   toggleActiveClass(thirdBar);
+  toggleActiveClass(fourthBar)
   removeClass(topBar,"no-anim");
   removeClass(midBar,"no-anim");
   removeClass(thirdBar,"no-anim");
+  removeClass(fourthBar,"no-anim");
+ 
 });
 

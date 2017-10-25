@@ -50,7 +50,18 @@
   border-radius: 0.5rem;
   background-color: white;
   box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
+  margin: 1rem 0;
   animation: third-rev 0.75s forwards;
+}
+
+.bars__fourth {
+  width: 5rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
+  margin: 1rem 0;
+  animation: fourth-rev 0.75s forwards;
 }
 
 .active.bars__first {
@@ -65,9 +76,13 @@
   animation: third 0.75s forwards;
 }
 
+.active.bars__fourth {
+  animation: fourth 0.75s forwards;
+}
+
 @keyframes first {
   0% {
-    transform: translate3d(0,0,0) rotate(0deg);
+    transform: translate3d(0,0,0) rotate(10deg);
   }
   50% {
     transform: translate3d(0,1.5rem,0) rotate(0deg);
@@ -125,6 +140,30 @@
   }
   50% {
     transform: translate3d(0,-1.5rem,0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0,0,0) rotate(0deg);
+  }
+}
+
+@keyframes fourth {
+  0% {
+    transform: translate3d(0,0,0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0,-3rem,0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0,-3rem,0) rotate(135deg);
+  }
+}
+
+@keyframes fourth-rev {
+  0% {
+    transform: translate3d(0,-3rem,0) rotate(135deg);
+  }
+  50% {
+    transform: translate3d(0,-3rem,0) rotate(0deg);
   }
   100% {
     transform: translate3d(0,0,0) rotate(0deg);
